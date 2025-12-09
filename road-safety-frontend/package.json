@@ -1,0 +1,37 @@
+{
+  "name": "road-safety-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:mock": "npm run ishhrunning && npm run genabi && vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "genabi": "node ./scripts/genabi.mjs",
+    "ishhrunning": "node ./scripts/is-hardhat-node-running.mjs"
+  },
+  "dependencies": {
+    "@zama-fhe/relayer-sdk": "0.3.0-5",
+    "clsx": "^2.1.1",
+    "ethers": "^6.15.0",
+    "idb": "^8.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.10.1",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@fhevm/mock-utils": "0.3.0-1",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.1"
+  }
+}
